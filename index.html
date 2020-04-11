@@ -6,7 +6,8 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">	
-	
+	<link rel="stylesheet" href="css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 	
 </head>
 
@@ -15,56 +16,64 @@
 	
 	<header>
 		<div class="bg-light-blue">
-			<nav>
-				<div class="row">
-					<div>
-						<ul>
-							<li><a href="http://www.instagram.com" target="_blank"><span>Instagram</span></a></li> <!-- sprites -->
-							<li><a href="http://www.twitter.com" target="_blank"><span>Twitter</span></a></li>
-							<li><a href="http://www.facebook.com" target="_blank"><span>Facebook</span></a></li>
-							<li><a href="http://www.youtube.com" target="_blank"><span>Youtube</span></a></li>
-							<li><a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" target="_blank"><span>Spotifiy</span></a></li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#about-us">About Us</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li><a href="#shop">Shop</a></li>
-							<li><a href="#blog">Blog</a></li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li><a href="#">search</a></li><!-- sprites -->
-							<li><a href="#">shop bag</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			<div class="wrapper">
+                <nav>
+                    <div class="row">
+                        <div>
+                            <ul>
+                                <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://accounts.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                            </ul>
+						</div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about-us">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+			</div>
 		</div>
 	
 		<div class="wrapper">
 			<h1>Oceanoid</h1>
 		</div>
 		 
-		<!-- so i tried something and I would like for it to bleed off the page, but I can't seem to accomplish that. I tried and would like to fix it.
-		Yet if I need to trash this I'm not offened. Ehhh? -->
-		<div class="slideshow-container"> 
-
+		<div class="slideshow-container slideshow-text"> 
+			<div class="mySlides">
+            	<img src="img/lifeguard-stand-strip.jpg" alt="nul" style="width:100%">
+				<div class="wrapper white-square">
+					<p>Late Morning<br>
+					Feeling the Ocean Breeze</p>
+				</div>
+            </div>
             <div class="mySlides">
-              <img src="img/beach-camp.jpg" alt="nul" style="width:100%">
-            </div>
-
+            	<img src="img/women-door-strip.jpg" alt="nul" style="width:100%">
+				<div class="wrapper slideshow-text">
+					<p>Late Morning<br>
+					Feeling the Ocean Breeze</p>
+				</div>
+			</div>
             <div class="mySlides">
-              <img src="img/kayaking.jpg" alt="nul" style="width:100%">
+            	<img src="img/village-strip.jpg" alt="nul" style="width:100%">
+				<div class="wrapper slideshow-text">
+					<p>Late Morning<br>
+					Feeling the Ocean Breeze</p>
+				</div>
             </div>
-
-            <div class="mySlides fade">
-              <img src="img/lifeguard-stand.jpg" alt="nul" style="width:100%">  
-            </div>
-
         </div>
 		
 		<div style="text-align:center">
@@ -76,24 +85,27 @@
 		
 	</header>
 	<div class="wrapper">
-		<div class="row">
-			<div class="img">
-				<p><a href="#">Travel</a></p>
+		<div class="row catigories">
+			<div class="col-1-3">
+            	<img src="img/women-beach.jpg" alt="nul" style="height:300px">  
+				<p class="box"><a href="#">Travel</a></p>
 			</div>
-			<div class="img">
+			<div class="col-2-3">
+				<img src="img/beach-camp.jpg" alt="nul" style="height:300px"> 
 				<p><a href="#">Lifestyle</a></p>
 			</div>
-			<div class="img">
+			<div class="col-3-3">
+				<img src="img/women-sunhat.jpg" alt="nul" style="height:300px"> 
 				<p><a href="#">Shop</a></p>
 			</div>
 		</div>
 
 		<section class="row">
-            <div class="left"> 
+            <div class="col-1-2"> 
                 <div class="square-ouline"></div>
                 <div class="img"></div>
             </div>
-            <div class="right"> 
+            <div class="col-2-2"> 
                 <section>
                     <h2><a name="blog"></a>New Playlist, Inde Music for an Endless Summer</h2>
                     <p><a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" target="_blank">Listen Now</a></p>
@@ -109,11 +121,11 @@
             </div>
 		</section>
 		<section class="row">
-            <div class="left"> 
-                <div class="square-ouline"></div>
-                <div class="img"></div>
+            <div class="col-1-2"> 
+                <div class="square-ouline">Outline</div>
+                <div class="img">Image here</div>
             </div>
-            <div class="right"> 
+            <div class="col-2-2"> 
                 <section>
                     <h2>Instagram Tips for Travel &amp; Lifestyle Bloggers</h2>
                     <p><a href="http://www.instagram.com" target="_blank">See More</a></p>
@@ -128,11 +140,11 @@
             </div>
 		</section>
 		<section class="row">
-            <div class="left"> 
+            <div class="col-1-2"> 
                 <div class="square-ouline"></div>
                 <div class="img"></div>
             </div>
-            <div class="right"> 
+            <div class="col-2-2"> 
                 <section>
                     <h2><a name="shop"></a>Summer Hair and Favorie Sun Hats</h2>
                     <p><a href="https://facebook.com" target="_blank">Read More </a></p>
@@ -148,61 +160,86 @@
             </div>
 		</section>
 	</div>
-			
-        <!--Pult theses images withing a div or a section -->
-        <div></div> <!-- images lined up in a row -->
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+	
+	<section class="wrapper">
+		<div class="number">
+			<p>1</p>
+		</div>
+		<div class="number">
+			<p>2</p>
+		</div>
+		<div class="number">
+			<p>3</p>
+		</div>
+		<div class="number">
+			<p>4</p>
+		</div>
+	</section>
+	
+	<section>
+		<div class="row img-string">
+			<div><img src="img/women-sunhat.jpg" alt="null" style="height:175px"></div>
+          	<div><img src="img/beach-camp.jpg" alt="null" style="height:175px"></div>
+          	<div><img src="img/lifeguard-stand.jpg" alt="null" style="height:175px"></div>
+          	<div><img src="img/women-door.jpg" alt="null" style="height:175px"></div>
+		  	<div><img src="img/beach-umbrella.jpg" alt="null" style="height:175px"></div>
+         	<div><img src="img/village.jpg" alt="null" style="height:175px"></div>
+          	<div><img src="img/women-beach.jpg" alt="null" style="height:175px"></div>
+         	<div><img src="img/seashells.jpg" alt="null" style="height:175px"></div>
+		</div>
+	</section>
 
-	<div class="wrapper">
+	<section class="wrapper">
         <div class="row">
-            <div id="col-1-3">
+            <section id="col-1-3">
                 <header>
                     <h4><a name="about-us"></a>About Us</h4>
                 </header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim </p>
                 <p><a href="#">Read More</a></p>
-            </div>
-            <div id="col-2-3">
+            </section>
+            <section id="col-2-3">
                 <header>
                     <h4>Let's Be Friends</h4>
                 </header>
                 <div>
                     <ul>
-                        <li><a href="http://www.instagram.com" target="_blank"><span>Instagram</span></a></li> <!-- sprites -->
-                        <li><a href="http://www.twitter.com" target="_blank"><span>Twitter</span></a></li>
-                        <li><a href="http://www.facebook.com" target="_blank"><span>Facebook</span></a></li>
-                        <li><a href="http://www.youtube.com" target="_blank"><span>Youtube</span></a></li>
-                        <li><a href="http://www.spotifiy.com" target="_blank"><span>Spotifiy</span></a></li>
+                    	<li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                       	<li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://accounts.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a></li>
                     </ul>
-                </div>
-                <div>
-                    <header>
-                        <h4><a name="contact"></a>Join Us!</h4>
-                    </header>
-                    <form>
-                        <fieldset>
-                            <label>Email:</label>
-                            <input type="email" name="email" id="email">
-                        </fieldset>
-                        <p><a href="#">Submit</a></p>
-                    </form>
-                </div>
-            </div>
+				</div>
+            </section>
+            <section class="wrapper">
+            	<header>
+                	<h4><a name="contact"></a>Join Us!</h4>
+                </header>
+                <form>
+                	<label>Email:</label>
+                    <input type="email" name="email" id="email">
+                   	<p><a href="#">Submit</a></p>
+               	</form>
+            </section>
+         </div>
             <div id="col-3-3">
                 <header>
                     <h4>Recent Posts</h4>
                 </header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim </p>
                 <p><a href="#">Read More</a></p>
-            </div>
-        </div>
-    </div>
+           	</div>
+	</section>
+	
+	<section class="bg-light-blue">
+		<footer>
+			<div class="wrapper">
+				<p>Oceanoid</p>
+			</div>
+		</footer>
+	</section>
+   
 
 	
 </body>
