@@ -71,6 +71,8 @@ li {
 
 h1 {
 	text-align: center;
+	font-size: 50px;
+	border-bottom: solid 3px black;
 }
 
 /*--------------------------------------------------------------
@@ -92,57 +94,11 @@ h1 {
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-/* -- HEADER -- */ 
-
-.bg-light-blue {
-	background-color: #C4EFFE;
-	padding: 20px;
-}
-
-
-.img-string div, .col-1-3, .col-2-3, .col-1-2, .number{
-	float:left;
-}
-
-.col-1-3,.col-2-3{
-	margin-right: 130px;
-}
-
-.col-3-3, .col-2-2 {
-	float: right;
-}
-
-.catigories p {
-	text-align: center;
-	font-weight: 700;
-	position: relative;
-	top: -200px;
-	left: 0px;
-	text-transform: uppercase;
-	background-color: #FFFFFF;
-	padding: 20px;
-}
-
-
-.catigories {
-	margin-top: 100px;
-	z-index: -2
-}
-
-.number {
-	text-align: center;
-}
-
 /* -- NAV -- */ 
 
 nav div ul {
 	float: left;
 }
-
-nav div:last-child ul {
-	float: right;
-}
-
 
 nav div:nth-child(2) ul {
 	text-align: center;
@@ -158,22 +114,281 @@ a:hover {
 }
 
 
-nav div, .slideshow-text {
+nav div, .slideshow-text, h1, .catigories p, h2{
 	text-transform: uppercase;
+}
+
+nav{
+	width: 1000px;
 }
 
 
 /* -- SLIDESHOW -- */
 
+#bg-lifeguard{
+	background: url("../img/lifeguard-stand-strip.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+
+#bg-women-door{
+	background: url("../img/women-door-strip.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+
+#bg-village{
+	background: url("../img/village-strip.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+}
+.slideshow-text {
+	background-color: #FFFFFF;
+	width: 500px;
+	height: 150px;
+	position: absolute;
+	top: 450px;
+ 	left: 470px;;
+	padding: 30px;
+	margin-top: 0px;
+}
+
+.slideshow-text p:first-of-type {
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
 .slideshow-text p {
 	text-align: center;
-	position: absolute;
-	top: 50%;
- 	left: 50%;
-	transform: translate(-50%, -50%);
-	font-weight: 700;
-	font-size: 30px;
+	font-weight: 600;
 }
+
+/* -- HEADER -- */ 
+
+
+.bg-cream {
+	background-color: #FFFEF4;
+}
+
+.bg-light-blue {
+	background-color: #C4EFFE;
+	padding: 20px;
+}
+
+
+.img-string div, #travel, #lifestyle, .number{
+	float:left;
+}
+
+.number {
+	width: 20px;
+	text-align: center;
+	border: solid black 1px;
+	
+}
+
+#shop, .col-2-2 {
+	float: right;
+}
+
+#travel, #lifestyle {
+	margin-right: 130px;
+}
+
+#travel, #lifestyle, #shop {
+	margin-top: 50px;
+}
+
+#travel p, #lifestyle p, #shop p{
+	background-color: #FFFFFF;
+	width: 150px;
+	height: 75px;
+	padding: 30px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#travel p {
+	position: absolute;
+	top: 960px;
+	left: 200px;
+}
+
+#lifestyle p {
+	position: absolute;
+	top: 960px;
+	left: 650px;
+}
+
+#shop p {
+	position: absolute;
+	top: 960px;
+	left: 1100px;
+}
+#travel {
+	background: url("../img/women-beach.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+#lifestyle {
+	background: url("../img/beach-camp.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+#shop {
+	background: url("../img/women-sunhat.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.col-1-2 {
+	float: left;
+}
+
+.col-2-2 {
+	float: right;
+}
+
+.col-1-2, .col-2-2 {
+	width:550px;
+}
+
+.col-2-2 {
+	margin-top: 200px;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.white-box p {
+	font-weight: 700;
+	border-bottom: solid 3px black;
+}
+
+.square-outline {
+	border: solid black 3px;
+	height: 400px;
+	width: 400px;
+}
+
+.square-outline:first-of-type {
+	margin-top: 200px;
+}
+
+
+.img-offset-1 {
+	background: url("../img/women-door.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 1325px;
+	left:175px;
+}
+
+
+.white-box-1, .white-box-2, .white-box-3 {
+	background-color: #FFFFFF;
+	width: 500px;
+	padding: 20px;
+	
+}
+
+.white-box-1, .white-box-3{
+	position: relative;
+	top: 0px;
+	left: -350px;
+}
+
+.white-box-text-1, .white-box-text-2, .white-box-text-3 {
+	background-color: white;
+	width:500px;
+	height:250px;
+	padding: 30px;
+	margin: 20px;
+}
+
+.img-offset-2 {
+	background: url("../img/women-sunhat.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 2200px;
+	left:700px;
+}
+
+.white-box-2 {
+	position: relative;
+	top: 400px;
+	left: 350px;
+}
+
+.white-box-text-2 {
+	position: absolute;
+	top: 2400px;
+	left: 100px;
+}
+
+.img-offset-3 {
+	background: url("../img/beach-umbrella.jpg") no-repeat scroll;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 2800px;
+	left:170px;
+}
+
 
 
 
